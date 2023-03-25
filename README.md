@@ -18,14 +18,8 @@ In this project I will document:
 
 ## Architecture
 
-![INSERTAR ARQUITECTURA]_
-.
+![architecture](https://github.com/FrKael/Macie-AutoProject/blob/main/images/architecture.png)
 
-.
-
-.
-
-.
 
 For this project I will create the example files:
 
