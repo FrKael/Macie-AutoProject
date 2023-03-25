@@ -123,7 +123,7 @@ $ aws s3 ls bucketpii
 ```
 Or check the console
 
-_[SS1]_
+![SS1](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss1.png)
 
 ### Stage 2 - Enable Amazon Macie
 
