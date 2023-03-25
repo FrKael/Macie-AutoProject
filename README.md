@@ -18,7 +18,7 @@ In this project I will document:
 
 ## Architecture
 
-_[INSERTAR ARQUITECTURA]_
+![INSERTAR ARQUITECTURA]_
 .
 
 .
@@ -133,11 +133,11 @@ Follow the directions of Macie -> <kbd>Enable Macie</kbd>
 
 Once enabled, wait a couple of minutes, and refresh a few times until Macie is ready and this screen has to be enabled
 
-_[SS2]_
+![SS2](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss2.png)
 
 From the “S3 Buckets” section, then click Create job
 
-_[SS3]_
+![SS3](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss3.png)
 
 This first job has:
 * named: maicejobpii
@@ -150,19 +150,19 @@ The entire job might take up to 20 minutes to complete
 
 When all the job is done, the status must be: Complete
 
-_[SS4]_
+![SS4](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss4.png)
 
 To see the results of the <kbd>findings</kbd>, choose view in <kbd>show findings</kbd>
 
-_[SS5]_
+![SS5](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss5.png)
 
 The result is displayed in this console panel:
 
-_[SS7]_
+![SS7](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss7.png)
 
 It can be seen in JSON format too:
 
-_[SS8]_
+![SS8](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss8.png)
 
 ### Stage 3 - Setting up SNS
 
@@ -176,11 +176,11 @@ I have a <kbd>SNS topic</kbd> with:
     * Subscribers: Only the specified AWS Accounts <kbd>MyAccountNumber</kbd>
 _#this method can also be applied to resources_
 
-_[SS9]_
+![SS9](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss9.png)
 
 Add a subscription with a mail (provided by: temp-mail.org)
 
-_[SS10]_
+![SS10](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss10.png)
 
 ### Stage 4 - Setting up EventBridge
 
@@ -197,7 +197,7 @@ I have a <kbd>eventBridge rule</kbd>  with:
     * AWS Service: SNS topic
     * Topic: pii-alerts
 
-_[SS11]_
+![SS11](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss11.png)
 
 ### Stage 5 - Adding a custom Macie data identifier
 
@@ -221,19 +221,19 @@ This second job has:
 * Managed data identifier: all
 * Custom data identifiers: LicencePlates
 
-_[SS12]_
+![SS12](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss12.png)
 
 After a few minutes, some non-working emails will be received.
 
-_[SS13]_
+![SS13](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss13.png)
 
 These are JSON outputs of Macie's findings, including the custom data identifier.
 
-_[SS14]_
+![SS14](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss14.png)
 
 ## Result: 
 
 Exploring the custom identifier finding shows that it found 9 License Plates in our plates.txt file
 
-_[SS15]_
+![SS15](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss15.png)
 
