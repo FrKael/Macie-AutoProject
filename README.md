@@ -121,7 +121,7 @@ Or check the console
 
 ### Stage 2 - Enable Amazon Macie
 
-[Amazon Maice](https://us-east-1.console.aws.amazon.com/macie/)
+[Amazon macie](https://us-east-1.console.aws.amazon.com/macie/)
 
 Follow the directions of Macie -> <kbd>Enable Macie</kbd>
 
@@ -134,8 +134,8 @@ From the “S3 Buckets” section, then click Create job
 ![SS3](https://github.com/FrKael/Macie-AutoProject-/blob/main/images/ss3.png)
 
 This first job has:
-* named: maicejobpii
-* selected S3 bucket: maicejobpii
+* named: maciejobpii
+* selected S3 bucket: maciejobpii
 * Refine the scope: One-time job
 * Managed data identifier: all
 * Custom data identifiers: None
@@ -195,7 +195,7 @@ I have a <kbd>eventBridge rule</kbd>  with:
 
 ### Stage 5 - Adding a custom Macie data identifier
 
-In Amazon Maice, I have a <kbd>Custom data identifiers</kbd> with:
+In Amazon Macie, I have a <kbd>Custom data identifiers</kbd> with:
 * Named LicencePlates
 * Regular expression:
 ```
